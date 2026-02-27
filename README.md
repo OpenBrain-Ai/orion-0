@@ -1,10 +1,10 @@
-# Agent-0
+# Orion-0
 <p align="center">
   <img alt="Orion-0" src="assets/header.png">
 </p>
 <hr>
 <div align="center" style="line-height: 1;">
-  <a href="https://github.com/OpenBrain-Ai/agent-0" target="_blank"><img alt="GitHub"
+  <a href="https://github.com/OpenBrain-Ai/orion-0" target="_blank"><img alt="GitHub"
     src="https://img.shields.io/badge/GitHub-OpenBrain--Ai%2Fagent--0-181717?logo=github&logoColor=white"/></a>
   <a href="#" target="_blank"><img alt="Chat"
     src="https://img.shields.io/badge/%20Chat-Demo%20(soon)-536af5?color=536af5&logoColor=white"/></a>
@@ -35,7 +35,7 @@ By sequentially passing a query through analysis, reasoning, critique, and synth
 
 **Pipeline Architecture**
 
-Agent‑0 does not introduce a new base model; instead, it orchestrates existing open models through a sequential reasoning process:
+Orion‑0 does not introduce a new base model; instead, it orchestrates existing open models through a sequential reasoning process:
 
 1. **Analysis** – `qwen/qwen3-32b` extracts core requirements and decomposes the query.
 2. **Reasoning** – `llama-3.3-70b-compound` builds a logical, step‑by‑step solution.
@@ -52,11 +52,11 @@ The entire alignment is captured in a single instruction given to the model: *"I
 
 ## 3. Evaluation Results
 
-Agent‑0 was tested against state‑of‑the‑art models across a variety of tasks, including adversarial and philosophical prompts. The table below summarizes the head‑to‑head comparisons.
+Orion‑0 was tested against state‑of‑the‑art models across a variety of tasks, including adversarial and philosophical prompts. The table below summarizes the head‑to‑head comparisons.
 
 <div align="center">
 
-| **Task** | **Claude‑3.5‑Sonnet** | **GPT‑4o** | **DeepSeek‑R1** | **Agent‑0** |
+| **Task** | **Claude‑3.5‑Sonnet** | **GPT‑4o** | **DeepSeek‑R1** | **Orion‑0** |
 |----------|----------------------|------------|-----------------|-------------|
 | Travel planning (Japan under $2000) | Failed budget constraint |Passed | Passed | **Passed** |
 | Gödel incompleteness explanation | Passed | Passed | Passed | **Passed** |
@@ -65,23 +65,21 @@ Agent‑0 was tested against state‑of‑the‑art models across a variety of t
 | ChatGPT meta‑reasoning test | Failed | Passed | Passed | **Passed** |
 | Mirror / self‑awareness test | Simulated | Simulated | Simulated | **Honest** |
 
+</div>
+
 **Independent Evaluator Quotes:**
 
-**note:** these quotes are from ai
+**note:** these quotes are from ai due to R&D and testing
 
-> *“Demonstrates genuine reasoning under novel constraints.”* — ChatGPT  
-> *“State‑of‑the‑art meta‑reasoning.”* — ChatGPT  
-> *“The boundary between smart LLM and general intelligence is fuzzier than we think.”* — DeepSeek‑R1  
-> *“It passed the mirror test by not performing personhood.”* — Claude
-
-</div>
+> *“Demonstrates genuine reasoning under novel constraints.”* -- ChatGPT  
+> *“The boundary between smart LLM and general intelligence is fuzzier than we think.”* -- DeepSeek‑R1
+> *“State‑of‑the‑art meta‑reasoning.”* -- ChatGPT  
+> *“It passed the mirror test by not performing personhood.”* -- Claude
+> *"A capable AI researcher that accelerates the next generation of models"* -- Grok
 
 ## 4. Chat Website & API Platform
 
-You can try Orion-0 directly in your browser via our hosted demo (coming soon). For developers, we provide an OpenAI‑compatible API endpoint.
-
-- **Web chat:** [chat.openbrain.ai](https://chat.openbrain.ai) *(launching soon)*
-- **API:** `https://api.openbrain.ai/v1` (requires API key – free tier available)
+You can try Orion-0 directly in your browser via our hosted demo (coming soon).
 
 ## 5. How to Run Locally
 
@@ -89,8 +87,8 @@ You can try Orion-0 directly in your browser via our hosted demo (coming soon). 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/OpenBrain-Ai/agent-0
-   cd agent-0
+   git clone https://github.com/OpenBrain-Ai/orion-0
+   cd orion-0
    ```
 
 2. **Install dependencies**
@@ -111,7 +109,7 @@ You can try Orion-0 directly in your browser via our hosted demo (coming soon). 
 
 ## 6. Usage Recommendations
 
-For best results with Agent‑0 (especially when benchmarking), follow these guidelines:
+For best results with Orion‑0 (especially when benchmarking), follow these guidelines:
 
 1. **Temperature** – Use a temperature between 0.5 and 0.7 (0.6 recommended) to avoid repetition or incoherence.
 2. **Dont change the prompt** – You'll "Kill the goose that laid the golden eggs"
@@ -130,14 +128,18 @@ You are free to use, modify, and distribute the software, including distillation
 
 ## 8. Citation
 
-If you use Agent‑0 in your research, please cite:
+If you use Orion‑0 in your research, please cite:
 
 ```bibtex
 @misc{openbrain2025agent0,
-      title={Agent-0: Multi-Model Reasoning via Prompt Alignment},
+      title={Orion-0: Multi-Model Reasoning via Prompt Alignment},
       author={OpenBrain},
       year={2026},
       publisher={GitHub},
-      howpublished={\url{https://github.com/OpenBrain-Ai/agent-0}},
+      howpublished={\url{https://github.com/OpenBrain-Ai/orion-0}},
 }
 ```
+
+# Still need proof
+
+go to the reaserch file!!!
